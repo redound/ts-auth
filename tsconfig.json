@@ -1,0 +1,25 @@
+{
+  "version": "1.8.9",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "declaration": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "./lib"
+  },
+  "filesGlob": [
+    "./**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
+  "files": [
+    "./src/AccountType.ts",
+    "./src/Manager.ts",
+    "./src/Manager.ts",
+    "./src/index.ts",
+    "./typings/main.d.ts"
+  ]
+}
