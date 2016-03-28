@@ -16,9 +16,9 @@
     "!./node_modules/**/*.ts"
   ],
   "files": [
-    "./src/AccountType.ts",
+    "./src/AccountTypeInterface.ts",
     "./src/Manager.ts",
-    "./src/Manager.ts",
+    "./src/Session.ts",
     "./src/index.ts",
     "./typings/main.d.ts"
   ]
