@@ -18,12 +18,12 @@ export default class Manager {
     static $inject: string[];
     constructor($q: ng.IQService);
     registerAccountType(name: any, account: AccountTypeInterface): this;
-    getAccountTypes(): any;
+    getAccountTypes(): Dictionary<any, AccountTypeInterface>;
     getSession(): Session;
     setSession(session: Session): void;
     clearSession(): this;
     loggedIn(): boolean;
-    getAccountType(name: any): any;
+    getAccountType(name: any): AccountTypeInterface;
     login(accountTypeName: any, credentials: {}): ng.IPromise<Session>;
     logout(accountTypeName: any): ng.IPromise<void>;
 }

@@ -16,7 +16,7 @@ export default class Manager {
 
     public events:EventEmitter = new EventEmitter();
 
-    protected _accountTypes:Dictionary<any, AccountTypeInterface> = new Dictionary()<any, AccountTypeInterface>();
+    protected _accountTypes:Dictionary<any, AccountTypeInterface> = new Dictionary<any, AccountTypeInterface>();
     protected _session:Session = null;
 
     public static $inject = ['$q'];
@@ -94,7 +94,10 @@ export default class Manager {
                 session: null
             });
 
-            throw e; // rethrow to not mark as handled
+            // TODO: Fix this (Olivier)
+            // throw e; // rethrow to not mark as handled
+
+            return this.getSession();
         });
     }
 
