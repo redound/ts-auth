@@ -1,4 +1,7 @@
 {
+  "name": "ts-auth",
+  "version": false,
+  "main": "./lib/ts-auth.d.ts",
   "ambientDependencies": {
     "angular": "registry:dt/angular#1.5.0+20160320081937",
     "jquery": "registry:dt/jquery#1.10.0+20160316155526",
