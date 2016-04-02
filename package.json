@@ -2,11 +2,9 @@
   "name": "ts-auth",
   "version": "0.1.0",
   "description": "TypeScript AngularJS Auth",
-  "main": "lib/index.js",
-  "typings": "lib/index",
+  "main": "lib/ts-auth.js",
   "scripts": {
     "test": "",
-    "postinstall": "typings install",
     "build": "tsc"
   },
   "dependencies": {
