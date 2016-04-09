@@ -87,17 +87,14 @@ export default class Manager {
 
             return this.getSession();
 
-        }).catch<Session>((e) => {
+        }).catch((e) => {
 
             this.events.trigger(ManagerEvents.LOGIN_ATTEMPT_FAIL, {
                 credentials: credentials,
                 session: null
             });
 
-            // TODO: Fix this (Olivier)
-            // throw e; // rethrow to not mark as handled
-
-            return this.getSession();
+            return this.$q.reject(e);
         });
     }
 
