@@ -98,17 +98,13 @@ export default class Manager {
         });
     }
 
-    public logout(accountTypeName:any):ng.IPromise<void> {
-
-        var accountType:AccountTypeInterface = this._accountTypes.get(accountTypeName);
-
-        if (!accountType) {
-            return this.$q.reject();
-        }
+    public logout():ng.IPromise<void> {
 
         if (!this.loggedIn()) {
             return this.$q.reject();
         }
+
+        var accountType:AccountTypeInterface = this._accountTypes.get(this.getSession().getAccountTypeName());
 
         return accountType.logout(this.getSession()).then(() => {
             this.events.trigger(ManagerEvents.LOGOUT, {

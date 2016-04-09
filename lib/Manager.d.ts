@@ -25,5 +25,5 @@ export default class Manager {
     loggedIn(): boolean;
     getAccountType(name: any): AccountTypeInterface;
     login(accountTypeName: any, credentials: {}): ng.IPromise<Session>;
-    logout(accountTypeName: any): ng.IPromise<void>;
+    logout(): ng.IPromise<void>;
 }
