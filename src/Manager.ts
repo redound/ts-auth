@@ -1,6 +1,6 @@
 import Session from "./Session";
-import EventEmitter from "ts-core/lib/Events/EventEmitter";
-import Dictionary from "ts-core/lib/Data/Dictionary";
+import EventEmitter from "ts-core/Events/EventEmitter";
+import Dictionary from "ts-core/Data/Dictionary";
 import {AccountTypeInterface} from "./AccountTypeInterface";
 
 export const ManagerEvents = {
